@@ -1,0 +1,33 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  # 🔥 appName
+  name: mvp_app_of_apps
+  namespace: argocd
+  # Add a this finalizer ONLY if you want these to cascade delete.
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+
+spec:
+
+  project: default
+  
+  source:
+    # 🔥 repoURL
+    repoURL: https://github.com/cloudnative-mvp1/mvp_app_of_app.git
+    targetRevision: HEAD
+    path: apps
+  
+  destination:
+    server: https://kubernetes.default.svc
+    # The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace
+    # 🔥 namespace
+    namespace: mvp
+  
+  syncPolicy:
+    automated: 
+      prune: true 
+      selfHeal: true   
+    # Namespace Auto-Creation ensures that namespace specified as the application destination exists in the destination cluster.  
+    syncOptions:
+      - CreateNamespace=false 
