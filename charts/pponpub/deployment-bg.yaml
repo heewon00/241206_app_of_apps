@@ -13,6 +13,8 @@ spec:
       labels:
         app: ppon
     spec:
+      imagePullSecrets:
+      - name: argocd-docker-secret
       containers:
       - name: ppon
         image: myharbor.apps.211-34-231-93.nip.io/mvp/mvp_ppon_pub_backend
