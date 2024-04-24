@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   # 🔥 appName
-  name: mvp_app_of_apps
+  name: mvp-app-of-apps
   namespace: argocd
   # Add a this finalizer ONLY if you want these to cascade delete.
   finalizers:
