@@ -9,7 +9,9 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 
 spec:
-
+  spec:
+    imagePullSecrets:
+    - name: argocd-docker-secret
   project: default
   
   source:
