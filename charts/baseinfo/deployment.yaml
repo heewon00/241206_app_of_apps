@@ -13,6 +13,8 @@ spec:
       labels:
         app: baseinfo
     spec:
+      imagePullSecrets:
+      - name: argocd-docker-secret
       containers:
       - name: baseinfo
         image: myharbor.apps.211-34-231-93.nip.io/mvp/mvp_baseinfo_backend
