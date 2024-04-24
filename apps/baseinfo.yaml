@@ -21,7 +21,7 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     # 🔥 namespace
-    namespace: edu3
+    namespace: mvp
     
   syncPolicy:
     automated: 
