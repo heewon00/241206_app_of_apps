@@ -16,7 +16,7 @@ spec:
     # 🔥 repoURL
     repoURL: https://github.com/cloudnative-mvp1/mvp_ppon_pub_backend_gitops.git
     targetRevision: HEAD
-    path: charts/backend
+    path: charts/ppon_pub_backend
   
   destination:
     server: https://kubernetes.default.svc
