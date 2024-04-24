@@ -14,9 +14,9 @@ spec:
   
   source:
     # 🔥 repoURL
-    repoURL: https://github.com/cloudnative-mvp1/mvp_ppon_sub_backend_gitops.git
+    repoURL: https://github.com/cloudnative-mvp1/mvp_app_of_apps.git
     targetRevision: HEAD
-    path: charts/ppon_sub_backend
+    path: charts/pponsub
   
   destination:
     server: https://kubernetes.default.svc
