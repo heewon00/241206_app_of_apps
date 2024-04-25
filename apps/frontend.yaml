@@ -14,9 +14,9 @@ spec:
   
   source:
     # 🔥 repoURL
-    repoURL: git@github.com:cloudnative-mvp1/mvp_app_of_apps.git
+    repoURL: git@github.com:cloudnative-mvp1/mvp_frontend_gitops.git
     targetRevision: HEAD
-    path: charts/frontend
+    path: ./
   
   destination:
     server: https://kubernetes.default.svc
