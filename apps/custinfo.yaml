@@ -14,7 +14,7 @@ spec:
   
   source:
     # 🔥 repoURL
-    repoURL: https://github.com/cloudnative-mvp1/mvp_app_of_apps.git
+    repoURL: git@github.com:cloudnative-mvp1/mvp_app_of_apps.git
     targetRevision: HEAD
     path: charts/custinfo
   
