@@ -14,7 +14,7 @@ spec:
   
   source:
     # 🔥 repoURL
-    repoURL: git@github.com:cloudnative-mvp1/mvp_baseinfo_backend_gitops.git
+    repoURL: git@github.com:cloudnative-mvp1/mvp_custinfo_backend_gitops.git
     targetRevision: HEAD
     path: charts/backend
   
