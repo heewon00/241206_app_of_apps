@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  # 🔥 appName
+  # appName
   name: mvp-app-of-apps
   namespace: argocd
   # Add a this finalizer ONLY if you want these to cascade delete.
@@ -12,8 +12,8 @@ spec:
   project: default
   
   source:
-    # 🔥 repoURL
-    repoURL: git@github.com:cloudnative-mvp1/mvp_app_of_apps.git
+    #  repoURL
+    repoURL: https://github.com/cloudnative-mvp1/mvp_app_of_apps.git
     targetRevision: HEAD
     path: apps
   
