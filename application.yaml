@@ -9,7 +9,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 
 spec:
-  project: default
+  project: mvp
   
   source:
     #  repoURL
