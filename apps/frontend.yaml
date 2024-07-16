@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  # 🔥 argocdName
+  # argocdName
   name: frontend-app-of-apps
   # ArgoCD가 설치되어 있는 namespace
   namespace: argocd
@@ -14,13 +14,13 @@ spec:
   
   source:
     # 🔥 repoURL
-    repoURL: git@github.com:cloudnative-mvp1/mvp_frontend_gitops.git
+    repoURL: git@github.com:azure-edu-gitops/mvp_gitops.git
     targetRevision: HEAD
-    path: .
+    path: frontend
   
   destination:
     server: https://kubernetes.default.svc
-    # 🔥 namespace
+    #  namespace
     namespace: mvp
     
   syncPolicy:
