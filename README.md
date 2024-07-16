@@ -1,1 +1,1 @@
-# mvp_app_of_apps
+# app_of_apps pattern
