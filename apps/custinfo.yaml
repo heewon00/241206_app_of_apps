@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  # 🔥 argocdName
+  #  argocdName
   name: custinfo-app-of-apps
   # ArgoCD가 설치되어 있는 namespace
   namespace: argocd
@@ -13,14 +13,14 @@ spec:
   project: default
   
   source:
-    # 🔥 repoURL
-    repoURL: git@github.com:cloudnative-mvp1/mvp_custinfo_backend_gitops.git
+    # repoURL
+    repoURL: git@github.com:azure-edu-gitops/mvp_gitops.git
     targetRevision: HEAD
-    path: charts/backend
+    path: charts/custinfo_backend
   
   destination:
     server: https://kubernetes.default.svc
-    # 🔥 namespace
+    # namespace
     namespace: mvp
     
   syncPolicy:
