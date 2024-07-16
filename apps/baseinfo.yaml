@@ -14,7 +14,7 @@ spec:
   
   source:
     #  repoURL
-    repoURL: git@github.com:azure-edu-gitops/mvp_gitops.git
+    repoURL: https://github.com/azure-edu-gitops/mvp_gitops.git
     targetRevision: HEAD
     path: charts/baseinfo_backend
   
