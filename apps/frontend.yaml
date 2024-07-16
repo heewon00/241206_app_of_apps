@@ -13,8 +13,8 @@ spec:
   project: default
   
   source:
-    # 🔥 repoURL
-    repoURL: git@github.com:azure-edu-gitops/mvp_gitops.git
+    # repoURL
+    repoURL: https://github.com/azure-edu-gitops/mvp_gitops.git
     targetRevision: HEAD
     path: frontend
   
