@@ -1,8 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  # 🔥 appName
-  name: mvp-app-of-apps
+  #  appName
+  name: app-of-apps
   namespace: argocd
   # Add a this finalizer ONLY if you want these to cascade delete.
   finalizers:
@@ -12,15 +12,15 @@ spec:
   project: default
   
   source:
-    # 🔥 repoURL
-    repoURL: git@github.com:cloudnative-mvp1/mvp_app_of_apps.git
+    #  repoURL
+    repoURL: git@github.com:azure-edu-gitops/app_of_apps.git
     targetRevision: HEAD
     path: apps
   
   destination:
     server: https://kubernetes.default.svc
     # The namespace will only be set for namespace-scoped resources that have not set a value for .metadata.namespace
-    # 🔥 namespace
+    # namespace
     namespace: mvp
   syncPolicy:
     automated: 
