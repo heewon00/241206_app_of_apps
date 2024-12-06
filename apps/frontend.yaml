@@ -14,7 +14,7 @@ spec:
   
   source:
     # repoURL
-    repoURL: https://github.com/azure-edu-gitops/mvp_gitops.git
+    repoURL: https://github.com/heewon00/241206_mvp_gitops.git
     targetRevision: HEAD
     path: frontend
   
